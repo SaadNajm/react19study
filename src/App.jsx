@@ -1,26 +1,16 @@
-/* eslint-disable no-unused-vars */
-import { useState } from "react";
-
-const Card = ({ title }) => {
-  const [hasLiked, setHasLiked] = useState(false);
-  return (
-    <div className="card">
-      <h2>{title}</h2>
-
-      <button onClick={() => setHasLiked(!hasLiked)}>
-        {hasLiked ? "Liked" : "Like"}
-      </button>
-    </div>
-  );
-};
+import React from "react";
 
 const App = () => {
   return (
-    <div className="card-container">
-      <Card title="Star Wars" />
-      <Card title="Avatar" />
-      <Card title="The Lion King" />
-    </div>
+<main>
+  <div className="pattern"/>
+  <div className="wrapper">
+   <header>
+    <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy Without The Hassle</h1>
+    </header> 
+    <p>Search</p>
+  </div>
+  </main>
   );
 };
 
